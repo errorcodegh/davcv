@@ -1,0 +1,607 @@
+*{
+	padding: 0px;
+	border: 0px;
+	margin: 0px;
+
+}
+
+
+#cl,#top,#cl{
+	display: none;
+}
+
+#together{
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+}
+
+#right{
+	width: 75%;
+	height: auto;
+	overflow-x: scroll;
+	background: #2b262d;
+	color: white;
+
+	
+}
+
+#left{
+	background: #001a33;
+	color: white;
+	width: 25%;
+	height: 100%;
+	line-height: 2.5em;
+	text-align: center;
+  position: sticky;
+	top: 0px;
+}
+
+
+ @keyframes autoslide1{
+	from{ width: 0%;}
+    to{width: 100%;}
+
+}
+
+#prof{
+  overflow: hidden;
+  border-right: 1px solid gold;
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: autoslide1 4s;
+
+}
+
+@keyframes autoslide{
+	from{ margin-right: -100%;}
+    to{width: 100%;}
+}
+
+
+#small_left{
+	width: 100%;
+	position: relative;
+	float: right;
+    animation: autoslide 2s;	
+}
+
+h3,h2{
+	font-family: comic sans ms;
+	opacity: 0.6;
+}
+
+#left p{
+	opacity: 0.8;
+	font: 700 15px system-ui;
+   font-family: arial;
+   line-height: 1.9em;
+}
+
+#pic{
+	width: 10em;
+	height: 10em;
+  border-radius: 50%;
+}
+
+
+#im{
+	width: 100%;
+}
+
+
+@keyframes slide{
+
+20% { left: 0%; }
+25% { left: -100%;}
+45% { left: -100%;}
+50% { left: -200%;}
+70% { left: -200%;}
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+#slider{
+overflow: hidden;
+margin-top: 0px;
+}
+
+#slider figure{
+	position: relative;
+	width: 500%;
+	text-align: center;
+  animation: 20s slide infinite;
+
+}
+
+#slider figure img{
+    width: 20%;
+    border-radius: 5em;
+	  height: 500px;
+	  float: left;
+	  object-fit: cover;
+}
+
+#allnum{
+	display: flex;
+	opacity: 0.8;
+
+}
+
+.run1,.run2,.run3{
+  margin: 0 auto;
+  font: 300 20px system-ui;
+  line-height: 0.009em;
+}
+
+#num1,#num3,#num2{
+	font: 700 35px system-ui;
+	font-family: arial;
+}
+
+.rn{
+	font: 500 25px system-ui;
+}
+
+@keyframes anim{
+	from{margin-left: 150px; opacity: 0.1;}
+	to{width: 75%;  opacity: 1;}
+
+	}
+
+#me{
+	width: 75%;
+	border-top: 0.2em solid gold;
+	border-bottom: 0.4em solid maroon;
+    border-radius: 3em;
+    animation: anim 2s;
+}
+
+
+
+#me h2{
+font: 700 25px system-ui;
+opacity: 0.5;
+}
+
+#me p{
+	font: 400 18px system-ui;
+    line-height: 1.7em;
+    text-align: justify;
+    font-family: arial;
+    opacity: 0.8;
+    
+
+}
+
+@keyframes anim3{
+from{margin-top: 100px; opacity: 0.1;} to{ opacity: 1;}
+}
+@keyframes anim4{
+from{margin-top: 100px; opacity: 0.1;} to{ opacity: 1;}
+}
+@keyframes anim5{
+from{margin-top: 100px; opacity: 0.1;} to{ opacity: 1;}
+}
+@keyframes anim6{
+from{margin-top: 100px; opacity: 0.1;} to{ opacity: 1;}
+}
+
+#projects h2{text-align: center; opacity: 0.7;}
+
+#projects{
+	width: 100%;
+}
+
+#bank{display: flex; animation: anim3 2s;}
+#bank1{display: flex; animation: anim4 2s;}
+#bank2{display: flex; animation: anim5 2s;}
+#bank3{display: flex; animation: anim6 2s;}
+
+#projects img{
+	width: 45%;
+	height: 10em;
+	margin-left: 0.5em;
+	object-fit: cover;
+}
+
+#projects h3{
+	text-align: center;
+}
+
+#projects p{
+	font: 600 16px system-ui;
+	text-align: justify;
+	opacity: 0.8;
+	padding: 3%;
+	width: 50%;
+	border-bottom: 0.2em solid gold;
+	border-radius: 2em;
+} 
+
+
+
+#foot{
+	width: 100%;
+	display: flex;
+	height: 7em;
+	background: rgba(0, 0,256, 0.1);
+}
+
+#first{
+	width: 35%;
+	display: inline-block;
+	margin: 3em 0 0 2em;
+	font: 500 16px system-ui;
+	word-spacing: 1em;
+}
+
+
+#second {
+width: 35%;
+font: 300 16px system-ui;
+font-family: arial;
+opacity: 0.6;
+margin-top: 1em;
+text-align: justify;
+
+}
+
+#third{
+	margin: 1.7em auto;
+    font: 400 16px system-ui;
+    opacity: 0.6;
+    font-family: arial;
+    line-height: 1.5em;
+
+}
+
+
+footer h3{text-align: center;}
+
+footer a{
+	text-decoration: none;
+}
+
+
+@keyframes anim2{
+	from{margin-left: 100px; opacity: 0.1;}
+	to{max-width: 100%; opacity: 1;}
+}
+
+#msg{
+	max-width: 100%;
+    margin: 0 10em;
+    animation: anim2 2s;
+}
+
+label,#ff,textarea{
+	text-align: justify;
+	display: block;
+    font: 600 16px system-ui;
+    opacity: 0.6;
+	background: none;
+	border: hidden;
+	color: white;
+}
+
+textarea{
+	border-bottom: 2px solid gold;
+	color: white;
+}
+
+#ss{
+    font: 600 20px system-ui;
+    opacity: 0.6;
+    background: none;
+    color: white;
+}   
+
+#ff{
+	width: 100%;
+	height: 1.5em;
+	border-bottom: 2px solid gold;
+    background: none;
+
+}
+
+@keyframes anim1{
+	from{margin-left: 100px; opacity: 0.1;}
+	to{max-width: 100%;  opacity: 1;}
+
+	}
+
+ #allmove{
+     max-width: 100%;
+     font: 500 19px system-ui;
+     line-height: 1em;
+     margin: 0 20%;
+     animation: anim1 2s;
+    }
+
+    #allmove p:nth-child(1){
+     font-family: comic sans ms;
+    }
+
+
+    #move{
+      width: 75%;
+      height: 22px;
+      animation: move 5s;
+      border-bottom: 0.2em solid gray; 
+
+    }
+
+    #move1{
+      width: 40%;
+      height: 22px;
+      animation: move1 5s;
+      border-bottom: 0.2em solid gold; 
+    }
+
+    #move2{
+      width: 90%;
+      height: 22px;
+      animation: move2 6s;
+      border-bottom: 0.2em solid green; 
+    }
+
+    #move3{
+      width: 90%;
+      height: 22px;
+      animation: move3 6s;
+      border-bottom: 0.2em solid pink; 
+    }
+
+    #move4{
+      width: 60%;
+      height: 22px;
+      animation: move4 6s;
+      border-bottom: 0.2em solid white; 
+    }
+
+    #move5{
+      width: 60%;
+      height: 22px;
+      animation: move5 6s;
+      border-bottom: 0.2em solid pink; 
+    }
+
+    #numm,#numm1,#numm2,#numm3,#numm4,#numm5{
+      float: right;
+      margin: 0 auto;
+     font: 200 21px system-ui;
+
+    }
+
+
+    @keyframes move{
+    from{width: 0%;}
+    to{width: 75%;}
+   }
+
+   @keyframes move1{
+    from{width: 0%;}
+    to{width: 40%;}
+   }
+
+    @keyframes move2{
+    from{width: 0%;}
+    to{width: 90%;}
+   }
+
+    @keyframes move3{
+    from{width: 0%;}
+    to{width: 90%;}
+   }
+
+   @keyframes move4{
+    from{width: 0%;}
+    to{width: 60%;}
+   }
+
+   @keyframes move5{
+    from{width: 0%;}
+    to{width: 60%;}
+   }
+
+
+
+
+@media all and (max-width: 720px){
+
+	#im{
+		object-fit: cover;	
+	}
+
+	#slider figure img{  object-fit: contain;}
+
+#right{
+	width: 0%;
+	height: auto;
+	overflow: hidden;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	transition: 1.5s;
+	z-index: 1;
+}
+
+#left{
+	width: 100%;
+}
+
+#cl{
+	display: flex;
+	width: 100%;
+	height: 2.5em;
+	background: white;
+	
+}
+
+#cl h1{
+	color: black;
+	padding-left: 5em;
+}
+
+@keyframes blink{
+	from{opacity: 0;}
+}
+
+#cl i{font-size: 1.2em;}
+
+#arrow{ animation: 1s blink infinite;}
+
+#left button{
+	font-weight: bold;
+	font-size: 1.7em;
+	padding-left: 1em;
+}
+
+#top{
+	display: flex;
+	height: 2.2em;
+
+}
+
+#close{
+	font-size: 2.2em;
+	padding-right: 0.7em;
+	background: none;
+	color: white;
+}
+
+@keyframes ss{
+0%{color: silver;}
+25%{color: gold;}
+50%{color: red;}
+75%{color: blue;}
+100%{color: cyan;}
+}
+
+#sl{
+	background: none;
+	animation: ss 3s infinite;
+}
+
+marquee{
+	margin-top: 0.6em;
+}
+
+@keyframes anim7{
+	from{margin-right: 150px; opacity: -0.1}
+	to{max-width: 100%; opacity: 1;}
+}
+
+#allnum{
+	display: inline-block;
+	animation: anim7 2s;
+}
+#num1,#num2,#num3{
+ line-height: 2.3em;
+}
+
+#allnum h6{
+	font-size: 1em;
+}
+
+#left p{
+  font: 500 20px system-ui;
+  font-family: arial;
+  opacity: 0.8;
+  line-height: 1.5em;
+
+}
+
+@keyframes autoslide{
+	from{ margin-left: -100%;}
+    to{width: 100%;}
+}
+
+    @keyframes autoslide1{
+	from{ width: 0%;}
+    to{width: 100%;}
+
+}
+
+#prof{
+	overflow: hidden;
+  border-right: 1px solid gold;
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: autoslide1 4s;
+
+}
+
+#small_left{
+	width: 100%;
+	position: relative;
+	float: left;
+    animation: autoslide 2s;	
+}
+
+#bank,#bank1,#bank2,#bank3{
+	display: block;
+}
+
+#projects img{
+	width: 95%;
+	height: 20em;
+}
+
+#projects p{
+	width: 90%;
+}
+
+#ff{
+	opacity: 1;
+}
+
+
+#foot{
+max-width: 100%;
+height: auto;
+display: inline-block;
+text-align: center;
+background: rgba(0, 0,256, 0.1);
+border-radius: 3em;
+border-bottom: 0.5em solid red;
+
+}
+
+#first{
+	line-height: 1.5em;
+}
+
+#second{
+	text-align: center;
+	display: block;
+	display: none;
+}
+
+#third{
+  max-width: 90%;
+  font-weight: bold;
+  font: 500 20px system-ui;
+  font-family: arial;
+  text-align: justify;
+}
+
+#msg{
+	margin: 0 1em 0 1em;
+    display: inline-block;
+}
+
+
+
+#allmove{
+	width: 100%;
+	display: inline-block;
+	margin: 0 0 0 1em;
+}
+
+
+}
